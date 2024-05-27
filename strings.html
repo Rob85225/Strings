@@ -1,0 +1,17 @@
+<! –– Robert Jimenez ––>
+<body bgcolor = “green”>
+   <font size="12pt " red="12pt "> Our Text </font>.
+  
+function palindrome(str) {
+  str = str.toLowerCase().replace(/[\W_]/g, "").split('');
+  var j=str.length-1;
+  for (var i=0; i<str.length/2; i++) { 
+    if (str[i]!=str[j])
+      return false;
+    j--;
+  }
+  return true;
+}
+
+
+palindrome("race car");
