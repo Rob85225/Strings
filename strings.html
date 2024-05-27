@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html>
-   <! –– Robert Jimenez ––>
 <body bgcolor = “green”>
    <font size="12pt " red="12pt "> Our Text </font>.
-  
-function palindrome(str) {
+<h1>Robert Jimenez</h1>
+
+<form action="/action_page.php">
+  <label for="fname">First name: </label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name: </label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="Zipcode">Zipcode:</label>
+  <input type="text" id="ZIPCODE" name="ZIPCODE"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<!DOCTYPE html>
+
+
+<label for="palindrome">palindrome:</label>
+  <input type="text" id="palindrome" name="palindrome"><br><br>("race car");
+  function palindrome(str) {
   str = str.toLowerCase().replace(/[\W_]/g, "").split('');
   var j=str.length-1;
-  for (var i=0; i<str.length/2; i++) { 
+  for (var i=0; i<str>.length/2; i++) { 
     if (str[i]!=str[j])
       return false;
     j--;
@@ -15,5 +30,7 @@ function palindrome(str) {
   return true;
 }
 
+<p>Click on the submit button to submit the form.</p>
 
-palindrome("race car");
+</body>
+</html>
